@@ -47,6 +47,7 @@ function resetAll(){
     num1=0;
     num2=0;
     sym="+";
+    inputb.setAttribute('placeholder',"enter first number")
     action=false;
 }
 for(i of numbtn ){
