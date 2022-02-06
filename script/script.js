@@ -24,6 +24,7 @@ function symchange(){
         else {num1=inputb.value
         inputb.value="";
         sym= document.getElementById(this.id).innerText;
+        inputb.setAttribute('placeholder',"enter second number")
         action=true;}
     }
 }

@@ -1,23 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    width: 100%;
-    height: 100%;
-    background-color: black;
+    font-family: 'Orbitron', sans-serif;
 }
 .main{
-    
-    background-color: blanchedalmond;
-    
+    width: 100vw;
+    height: 100vh;
+    background-color: #212428;
+    display: grid;
+    place-items: center;
 }
 .box{
     width: max-content;
     padding: 1rem;
-    border: 2px solid black;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     justify-content: center;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
 }
 .btnbox{
     width:fit-content;
@@ -26,15 +29,55 @@ body{
     grid-template-columns: auto auto auto auto;
     
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .inputbox{
     display: grid;
     place-items: center;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    border-radius: 20px;
+    width: 90%;
 }
 
 #inputb{
-   height: 2rem;
+   height: 2.5rem;
+   /* background-color: linear-gradient(145deg, #1e2024, #23272b);
+   box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225; */
+   border: none;
+   outline: none;
+   background-color: transparent;
+   width: 90%;
+   color: #919191;
+   font-size: 1.1rem;
+   line-height: 2.5rem;
 }
 .num,.sym{
     padding: 0.5rem;
     margin: 5px;
+}
+button.num, button.sym{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    color: #fddfe5;
+    padding:10px 15px;
+    margin-top: 10px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+button.ac{
+    color: #FD4766;
+}
+button.num:hover, button.sym:hover{
+    
+    box-shadow: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+    color: #FD4766;
 }
